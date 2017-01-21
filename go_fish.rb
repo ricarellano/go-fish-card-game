@@ -1,9 +1,21 @@
 class PlayingCard
   # initialize
+attr_reader :rank, :suit, :face, :to_s
+  def initialize(hash)
+    @rank = hash[:rank]
+    @suit = hash[:suit]
+    @face = @rank + @suit
+    @to_s = @face.to_s
+  end
 end
+
+
 
 class CardDeck
   # initialize
+  def initialize(*boolean)
+
+  end
 end
 
 class HandOfCards
